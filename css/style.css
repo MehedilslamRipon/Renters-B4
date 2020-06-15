@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css?family=Caveat|Mali");
+
+:root {
+    --mainDark: #242325;
+    --mainGreen: #61e786;
+    --mainWhite: #fff;
+    --mainGrey: #eeeeee;
+}
+body {
+    font-family: "Mali", cursive;
+    background: var(--mainWhite);
+    color: var(--mainDark);
+  }
+/* global */
+.text-green{
+    color: var(--mainGreen);
+}
+.btn-green {
+    color: var(--mainGreen);
+    border: 0.1rem solid var(--mainGreen);
+    background: transparent;
+}
+.btn-green:hover {
+    background: var(--mainGreen);
+    color: var(--mainWhite);
+}
+.title-underline{
+    width: 12rem;
+    height: 0.3rem;
+    margin: 0 auto;
+    border-radius: 2rem;
+    position: relative;
+}
+.title-underline-center{
+    width: 50%;
+    height: 0.6rem;
+    left: 50%;
+    top: 50%;
+    background: var(--mainGreen);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 2rem;
+}
+/* end of global */
+/* navbar */
+.navbar {
+    background: var(--mainDark) !important;
+  }
+  .phone-icon {
+    color: var(--mainGreen);
+    border: 0.1rem solid var(--mainGreen);
+    padding: 0.5rem;
+    border-radius: 50%;
+  }
+/* end of navbar */
+
+/* banner */
+.banner-info{
+    min-height: calc(100vh - 101px);
+    background: var(--mainGrey);
+    position: relative;
+}
+.banner-info-footer{
+    background: var(--mainGreen);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.banner-img{
+    background: url(../img/bannerBcg.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+.banner-img-footer{
+    background: var(--mainDark);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    min-height: 121px;
+}
+/* end of banner */
+/* about section */
+blockquote{
+    border-left: 0.5rem solid var(--mainGreen);
+}
+.img-container{
+    position: relative;
+}
+.featured-icons{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.featured-icon-left{
+    padding: 0.4rem;
+    background: var(--mainDark);
+    display: inline-block;
+    color: var(--mainWhite);
+}
+.featured-icon-right{
+    padding: 0.4rem;
+    background: var(--mainGreen);
+    display: inline-block;
+    color: var(--mainWhite);
+}
+/* end of about section */
+/* featured section */
+.featured{
+    background: var(--mainGrey);
+}
+/* end of featured section */
+/* contact section */
+.contact{
+    background: var(--mainGreen);
+    color: var(--mainWhite);
+}
+.contact-btn{
+    background: transparent;
+    color: var(--mainWhite);
+    border: 0.1rem solid var(--mainWhite);
+}
+.contact-btn:hover{
+    background: var(--mainWhite);
+    color: var(--mainGreen);
+}
+/* end of contact section */
+/* services section */
+.services, .virtual-tour{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bannerBcg.jpeg) center/cover fixed no-repeat;
+}
+.services-info-text{
+    color: var(--mainWhite) !important;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--mainGreen);
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+.services-info-text:hover{
+    background: var(--mainDark) !important;
+    text-decoration: none;
+}
+.service-icon{
+    color: var(--mainGreen);
+    font-size: 2rem;
+    border: 0.1rem solid var(--mainGreen);
+    padding: 0.5rem;
+    margin-right: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+.service-icon:hover{
+    background: var(--mainGreen) !important;
+    color: var(--mainWhite);
+}
+.service-link:hover{
+    color: var(--mainWhite);
+}
+/* end of services section */
+/* gallery section */
+.gallery-first-img{
+    margin-top: 35px;
+}
+.gallery-btn{
+    background: var(--mainGrey);
+    color: var(--mainDark);
+}
+.gallery-btn:hover{
+    background: var(--mainGreen);
+    color: var(--mainWhite);
+}
+.gallery-img-container{
+    position: relative;
+    transition: all 0.5s linear;
+    overflow: hidden;
+}
+.gallery-img-container:hover{
+    background: rgba(0, 0, 0, 0.9);
+}
+..gallery-img{
+    transition: all 0.5s linear;
+}
+.gallery-img-container:hover .gallery-img{
+    opacity: 0.3;
+}
+.gallery-info{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    background: var(--mainGreen);
+    transform: translate(-50%, 100%);
+    color: var(--mainWhite);
+    text-decoration: none;
+    transition: all 0.3s linear;
+    border-radius: 6px 6px 0px 0px;
+}
+.gallery-info:hover{
+    color: var(--mainDark);
+    text-decoration: none;
+}
+.gallery-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: var(--mainWhite);
+    cursor: pointer;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+    transition: 0.5s all linear;
+    opacity: 0;
+}
+.gallery-img-container:hover .gallery-icon{
+    opacity: 1;
+}
+.gallery-img-container:hover .gallery-info{
+    transform: translate(-50%, 0);
+}
+/* end of gallery section */
+/* virtual tour */
+.tour-icon{
+    color: var(--mainGreen);
+    background: var(--mainWhite);
+    padding: 1rem 1rem;
+    border-radius: 20px;
+    transition: 0.5s all ease-in-out;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.tour-icon:hover{
+    color: var(--mainWhite);
+    background: var(--mainGreen);
+}
+/* end of virtual tour */
+/* footer */
+.footer{
+    background: var(--mainDark);
+}
+/* end of footer */
