@@ -1,0 +1,2 @@
+# Renters-B4
+### Rental is a spectacular free Bootstrap real estate website template which architects and interior designers will find beneficial, too. It rocks loads of modern and premium-like perks that will elevate your online presence without trouble. Just the creative design alone sparks interest in everyone who visits your site. Of course, Rental is also responsive, mobile-ready, compatible with modern web browsers and retina screens. It keeps presenting all your custom content sophistically regardless of the device and platform they use.
